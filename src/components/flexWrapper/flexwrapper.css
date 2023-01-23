@@ -1,0 +1,27 @@
+.flex{
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tarjetas{
+    background-color: rgb(212, 241, 247);
+    margin-top: 30px;
+    border-radius: 20px;
+    
+}
+
+.tarjetas img {
+  border-radius: 20px;
+  margin: 15px;
+  margin-bottom: 20px;
+  padding: 5px;
+  
+}
+
+img:hover {
+  
+  transform: scale(1.1);
+}
+
