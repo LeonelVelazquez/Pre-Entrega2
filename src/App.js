@@ -6,7 +6,7 @@ import tazas from "./components/paginas/tazas";
 import Cards from "./components/Cards/Cards";
 import FlexWrapper from "./components/flexWrapper/flexWrapper";
 import Button from "./components/button/Button";
-import Item from "./components/Item/Item";
+
 
 import imgRemeras from "./assets/img/Remeras.png";
 import GRIZZY from "./assets/img/GRIZZY.png";
@@ -21,13 +21,7 @@ function App() {
       </div>
 
       <hr />
-       <FlexWrapper>
-        <Item/>
-        <Item/>
-        <Item/>
-        <Item/>
-        
-      </FlexWrapper>
+
       <FlexWrapper>
         
         <Cards
