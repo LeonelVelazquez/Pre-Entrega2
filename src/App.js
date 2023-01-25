@@ -13,6 +13,7 @@ import GRIZZY from "./assets/img/GRIZZY.png";
 import TazaRafa from "./assets/img/TazaRafa.png";
 import Llaveros from './assets/img/llaveros.png'
 
+
 function App() {
   return (
     <>
@@ -23,37 +24,44 @@ function App() {
       <hr />
 
       <FlexWrapper>
-        
-        <Cards
-       
-          title="Remeras"
-          price={2000}
-          detail="Remera de Gato"
-          imgurl={imgRemeras}
-        />
-        <Cards
-          title="Taza de Rafa"
-          price={1200}
-          detail="Taza Rafa 250ml"
-          imgurl={TazaRafa}
-        />
-        <Cards
-          title="Set de Jardin"
-          price={1500}
-          detail="Set de Jardin completo"
-          imgurl={GRIZZY}
-        />
-        <Cards
-          title="Llavero Argentina"
-          price={500}
-          detail="Llavero de camiseta argentina"
-          imgurl={Llaveros}
-        />
+        {Cards.map((Cards) => (
+            <Cards
+              title={Cards.title}
+              price={Cards.price}
+              detail={Cards.detail}
+              imgurl={imgRemeras} />
+          ))}
+
       </FlexWrapper>
-      
-      
+
+
     </>
   );
 }
 
 export default App;
+
+/*<Cards
+title="Remeras"
+price={2000}
+detail="Remera de Gato"
+imgurl={imgRemeras}
+/>
+<Cards
+title="Taza de Rafa"
+price={1200}
+detail="Taza Rafa 250ml"
+imgurl={TazaRafa}
+/>
+<Cards
+title="Set de Jardin"
+price={1500}
+detail="Set de Jardin completo"
+imgurl={GRIZZY}
+/>
+<Cards
+title="Llavero Argentina"
+price={500}
+detail="Llavero de camiseta argentina"
+imgurl={Llaveros}
+/>*/
